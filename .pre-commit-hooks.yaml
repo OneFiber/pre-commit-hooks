@@ -1,9 +1,11 @@
 -   id: svelte-check
     name: Svelte Check
     description: Runs svelte-check
-    entry: npx
-    args: ["svelte-check","--tsconfig","./tsconfig.json"]
+    entry: svelte-check --tsconfig ./tsconfig.json
+    args: []
     language: node
     types: [text]
+    require_serial: false
     additional_dependencies: ["svelte-check@3.1.4"]
     pass_filenames: false
+    minimum_pre_commit_version: "0"
